@@ -1,0 +1,31 @@
+@define-color background rgba({background.red}, {background.green}, {background.blue}, 0.7);
+@define-color foreground {foreground};
+@define-color foreground-bright {color7};
+
+@define-color color0 {color0};
+@define-color color1 {color1};
+@define-color color1-alpha rgba({color1.red}, {color1.green}, {color1.blue}, 0.5);
+@define-color color2 {color2};
+@define-color color3 {color3};
+@define-color color4 {color4};
+@define-color color4-alpha rgba({color4.red}, {color4.green}, {color4.blue}, 0.2);
+@define-color color5 {color5};
+@define-color color5-alpha rgba({color5.red}, {color5.green}, {color5.blue}, 0.2);
+@define-color color6 {color6};
+@define-color color6-alpha rgba({color6.red}, {color6.green}, {color6.blue}, 0.555);
+@define-color color7 {color7};
+@define-color color8 {color8};
+@define-color color9 {color9};
+@define-color color10 {color10};
+@define-color color11 {color11};
+@define-color color12 {color12};
+@define-color color12-alpha rgba({color12.red}, {color12.green}, {color12.blue}, 0.4);
+@define-color color13 {color13};
+@define-color color13-alpha rgba({color13.red}, {color13.green}, {color13.blue}, 0.6);
+@define-color color14 {color14};
+@define-color color15 {color15};
+
+@define-color network-color {color7};
+@define-color network-wifi {color10};
+@define-color network-ethernet {color12};
+@define-color network-disconnected {color9};

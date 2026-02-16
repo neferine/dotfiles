@@ -1,0 +1,87 @@
+* {
+    font-family:
+        "Iosevka Nerd Font Mono", "JetBrainsMono Nerd Font", "Noto Sans",
+        sans-serif;
+    font-size: 13px;
+    color: @foreground;
+    background: transparent;
+    border: none;
+}
+
+window#waybar {
+    background-color: @background;
+    margin: 0;
+    padding: 2px 6px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @foreground;
+    padding: 4px 8px;
+    margin: 2px;
+    transition: background 0.2s ease;
+    border-radius: 10px;
+}
+
+#workspaces button.focused {
+    background-color: @color1-alpha;
+    border: 1px solid @color9;
+    font-weight: bold;
+    color: @foreground-bright;
+}
+
+#battery,
+#network,
+#cpu,
+#memory,
+#custom-player,
+#mpris,
+#custom-volume {
+    padding: 4px 8px;
+    margin: 2px 4px;
+    background-color: @color4-alpha;
+    border: 1px solid @color12-alpha;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+    color: @foreground-bright; /* Ensure text is always visible */
+}
+
+#network {
+    color: @network-color; /* Dedicated color for network */
+}
+
+#network.ethernet {
+    color: @network-ethernet;
+}
+
+#network.wifi {
+    color: @network-wifi;
+}
+
+#clock {
+    border-bottom: 1px solid @color6-alpha;
+    font-weight: bolder;
+    color: @color3;
+}
+
+#battery.charging {
+    color: @color11;
+}
+
+#battery.critical {
+    color: @color9;
+    font-weight: bold;
+}
+
+#network.disconnected {
+    color: @network-disconnected;
+    font-weight: bold;
+}
+
+#mpris-hover,
+#custom-volume:hover,
+#battery:hover,
+#network:hover {
+    background-color: @color5-alpha;
+    border-color: @color13-alpha;
+}

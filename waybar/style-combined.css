@@ -1,0 +1,118 @@
+@define-color background rgba(0.051, 0.051, 0.122, 0.7);
+@define-color foreground #c2c2c7;
+@define-color foreground-bright #c2c2c7;
+
+@define-color color0 #0d0d1f;
+@define-color color1 #39476A;
+@define-color color1-alpha rgba(0.224, 0.278, 0.416, 0.5);
+@define-color color2 #544C6E;
+@define-color color3 #AA566A;
+@define-color color4 #52669B;
+@define-color color4-alpha rgba(0.322, 0.400, 0.608, 0.2);
+@define-color color5 #617FC1;
+@define-color color5-alpha rgba(0.380, 0.498, 0.757, 0.2);
+@define-color color6 #E9738E;
+@define-color color6-alpha rgba(0.914, 0.451, 0.557, 0.555);
+@define-color color7 #c2c2c7;
+@define-color color8 #5c5c71;
+@define-color color9 #39476A;
+@define-color color10 #544C6E;
+@define-color color11 #AA566A;
+@define-color color12 #52669B;
+@define-color color12-alpha rgba(0.322, 0.400, 0.608, 0.4);
+@define-color color13 #617FC1;
+@define-color color13-alpha rgba(0.380, 0.498, 0.757, 0.6);
+@define-color color14 #E9738E;
+@define-color color15 #c2c2c7;
+
+@define-color network-color #c2c2c7;
+@define-color network-wifi #544C6E;
+@define-color network-ethernet #52669B;
+@define-color network-disconnected #39476A;
+* {
+    font-family:
+        "Iosevka Nerd Font Mono", "JetBrainsMono Nerd Font", "Noto Sans",
+        sans-serif;
+    font-size: 13px;
+    color: @foreground;
+    background: transparent;
+    border: none;
+}
+
+window#waybar {
+    background-color: @background;
+    margin: 0;
+    padding: 2px 6px;
+}
+
+#workspaces button {
+    background: transparent;
+    color: @foreground;
+    padding: 4px 8px;
+    margin: 2px;
+    transition: background 0.2s ease;
+    border-radius: 10px;
+}
+
+#workspaces button.focused {
+    background-color: @color1-alpha;
+    border: 1px solid @color9;
+    font-weight: bold;
+    color: @foreground-bright;
+}
+
+#battery,
+#network,
+#cpu,
+#memory,
+#custom-player,
+#mpris,
+#custom-volume {
+    padding: 4px 8px;
+    margin: 2px 4px;
+    background-color: @color4-alpha;
+    border: 1px solid @color12-alpha;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+    color: @foreground-bright; /* Ensure text is always visible */
+}
+
+#network {
+    color: @network-color; /* Dedicated color for network */
+}
+
+#network.ethernet {
+    color: @network-ethernet;
+}
+
+#network.wifi {
+    color: @network-wifi;
+}
+
+#clock {
+    border-bottom: 1px solid @color6-alpha;
+    font-weight: bolder;
+    color: @color3;
+}
+
+#battery.charging {
+    color: @color11;
+}
+
+#battery.critical {
+    color: @color9;
+    font-weight: bold;
+}
+
+#network.disconnected {
+    color: @network-disconnected;
+    font-weight: bold;
+}
+
+#mpris-hover,
+#custom-volume:hover,
+#battery:hover,
+#network:hover {
+    background-color: @color5-alpha;
+    border-color: @color13-alpha;
+}
