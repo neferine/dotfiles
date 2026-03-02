@@ -1,34 +1,34 @@
-@define-color background rgba(0.051, 0.051, 0.122, 0.7);
-@define-color foreground #c2c2c7;
-@define-color foreground-bright #c2c2c7;
+@define-color background rgba(0.212, 0.125, 0.106, 0.7);
+@define-color foreground #ccc7c6;
+@define-color foreground-bright #ccc7c6;
 
-@define-color color0 #0d0d1f;
-@define-color color1 #39476A;
-@define-color color1-alpha rgba(0.224, 0.278, 0.416, 0.5);
-@define-color color2 #544C6E;
-@define-color color3 #AA566A;
-@define-color color4 #52669B;
-@define-color color4-alpha rgba(0.322, 0.400, 0.608, 0.2);
-@define-color color5 #617FC1;
-@define-color color5-alpha rgba(0.380, 0.498, 0.757, 0.2);
-@define-color color6 #E9738E;
-@define-color color6-alpha rgba(0.914, 0.451, 0.557, 0.555);
-@define-color color7 #c2c2c7;
-@define-color color8 #5c5c71;
-@define-color color9 #39476A;
-@define-color color10 #544C6E;
-@define-color color11 #AA566A;
-@define-color color12 #52669B;
-@define-color color12-alpha rgba(0.322, 0.400, 0.608, 0.4);
-@define-color color13 #617FC1;
-@define-color color13-alpha rgba(0.380, 0.498, 0.757, 0.6);
-@define-color color14 #E9738E;
-@define-color color15 #c2c2c7;
+@define-color color0 #36201b;
+@define-color color1 #737584;
+@define-color color1-alpha rgba(0.451, 0.459, 0.518, 0.5);
+@define-color color2 #867E89;
+@define-color color3 #AFA59E;
+@define-color color4 #CCBA9E;
+@define-color color4-alpha rgba(0.800, 0.729, 0.620, 0.2);
+@define-color color5 #DCC6A3;
+@define-color color5-alpha rgba(0.863, 0.776, 0.639, 0.2);
+@define-color color6 #D4C7AE;
+@define-color color6-alpha rgba(0.831, 0.780, 0.682, 0.555);
+@define-color color7 #ccc7c6;
+@define-color color8 #7e6c67;
+@define-color color9 #737584;
+@define-color color10 #867E89;
+@define-color color11 #AFA59E;
+@define-color color12 #CCBA9E;
+@define-color color12-alpha rgba(0.800, 0.729, 0.620, 0.4);
+@define-color color13 #DCC6A3;
+@define-color color13-alpha rgba(0.863, 0.776, 0.639, 0.6);
+@define-color color14 #D4C7AE;
+@define-color color15 #ccc7c6;
 
-@define-color network-color #c2c2c7;
-@define-color network-wifi #544C6E;
-@define-color network-ethernet #52669B;
-@define-color network-disconnected #39476A;
+@define-color network-color #ccc7c6;
+@define-color network-wifi #867E89;
+@define-color network-ethernet #CCBA9E;
+@define-color network-disconnected #737584;
 * {
     font-family:
         "Iosevka Nerd Font Mono", "JetBrainsMono Nerd Font", "Noto Sans",
